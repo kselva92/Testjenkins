@@ -17,7 +17,7 @@ public class Logintest {
 	@BeforeMethod
 	public void setup() {
 
-		System.setProperty("webdriver.chrome.driver", "chromedriver//chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 
 		driver = new ChromeDriver();
 
