@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 
@@ -20,8 +21,10 @@ public class Logintest {
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 
 		driver = new ChromeDriver();
-
-		PageFactory.initElements(driver, Login.class);
+		ChromeOptions options = new ChromeOptions();
+	    options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors", "--silent");
+		
+	    PageFactory.initElements(driver, Login.class);
 
 		driver.get("http://demo.zaigoshop.com/login");
 
