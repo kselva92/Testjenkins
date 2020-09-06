@@ -17,7 +17,7 @@ public class Logintest {
 	@BeforeMethod
 	public void setup() {
 
-		System.setProperty("webdriver.chrome.driver", "F:\\Selva\\Zaigo Infotech\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "chromedriver//chromedriver");
 
 		driver = new ChromeDriver();
 
