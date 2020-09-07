@@ -22,10 +22,11 @@ public class Logintest {
 		
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 
-		driver = new ChromeDriver();
 		ChromeOptions options = new ChromeOptions();
 	    options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
 
+		driver = new ChromeDriver(options);
+		
 	    PageFactory.initElements(driver, Login.class);
 
 		driver.get("http://demo.zaigoshop.com/login");
