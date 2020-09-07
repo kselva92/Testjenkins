@@ -18,7 +18,7 @@ public class Logintest {
 	@BeforeMethod
 	public void setup() {
 
-		System.setProperty("webdriver.chrome.driver", "/root/Testjenkins/chromedriver/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/root/chromedriver");
 
 		driver = new ChromeDriver();
 		ChromeOptions options = new ChromeOptions();
