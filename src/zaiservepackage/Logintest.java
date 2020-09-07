@@ -24,7 +24,8 @@ public class Logintest {
 
 		driver = new ChromeDriver();
 		ChromeOptions options = new ChromeOptions();
-	    options.addArguments("--headless", "--no-sandbox");
+	    options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
+
 	    options.setExperimentalOption("useAutomationExtension", false);
 		
 	    PageFactory.initElements(driver, Login.class);
