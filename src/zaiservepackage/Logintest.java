@@ -22,7 +22,7 @@ public class Logintest {
 
 		driver = new ChromeDriver();
 		ChromeOptions options = new ChromeOptions();
-	    options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors", "--silent");
+	    options.addArguments("--headless", "--no-sandbox", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors", "--log-level=0");
 		
 	    PageFactory.initElements(driver, Login.class);
 
