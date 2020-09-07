@@ -20,7 +20,7 @@ public class Logintest {
 		
 		System.out.println(System.getProperty("os.name"));
 		
-		System.setProperty("webdriver.chrome.driver", "/root/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 
 		driver = new ChromeDriver();
 		ChromeOptions options = new ChromeOptions();
