@@ -26,8 +26,6 @@ public class Logintest {
 		ChromeOptions options = new ChromeOptions();
 	    options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
 
-	    options.setExperimentalOption("useAutomationExtension", false);
-		
 	    PageFactory.initElements(driver, Login.class);
 
 		driver.get("http://demo.zaigoshop.com/login");
